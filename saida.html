@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Saída de estoque</title>
+    <script src="saida.js"></script>
+  </head>
+  <body>
+    <h1>Saída de estoque</h1>
+    <label for="codigo">Código:</label>
+    <input type="text" id="codigo" name="codigo">
+	<button onclick="buscarProdutos()">Buscar</button>
+    <hr>
+    <table id="tabela">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Produto</th>
+          <th>Marca</th>
+          <th>Modelo</th>
+          <th>Valor</th>
+          <th>Quantidade</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <hr>
+    <label for="qtd-saida">Quantidade de saída:</label>
+    <input type="number" id="qtd-saida" name="qtd-saida" min="1">
+    <button id="btn-saida" onclick="registrarSaida()" disabled>Registrar saída</button>
+  </body>
+</html>
